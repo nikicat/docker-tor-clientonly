@@ -8,8 +8,8 @@ This does not set up a tor relay or exit node.
 
 To build using the Dockerfile::
 
-    git clone np1/docker-tor.git
-    cd docker-tor
+    git clone https://github.com/np1/docker-tor-clientonly.git
+    cd docker-tor-clientonly
     docker build -t nagev/tor .
 
 Or pull the image from the Docker repository::
