@@ -1,7 +1,7 @@
 # docker-tor-clientonly
 
 Dockerfile to download and compile tor software.
-When run, tor starts with a SOCKS5 server accessible on port 9150.  
+When run, tor starts with a SOCKS5 server accessible on port 9050.  
 This does not set up a tor relay or exit node.
 
 ### To build using the Dockerfile
@@ -21,7 +21,7 @@ $ docker pull nagev/tor
 ### To run
 
 ```bash
-$ docker run -d --name tor_instance -p 127.0.1.1:9150:9150 nagev/tor
+$ docker run -d --name tor_instance -p 127.0.1.1:9050:9050 nagev/tor
 ```
 
 ### To view the Tor log
@@ -33,7 +33,7 @@ $ docker logs tor_instance
 ### To use, configure your browser/client to use a SOCKS server
 
     Server IP: 127.0.1.1
-    Server port: 9150
+    Server port: 9050
 
 ### To stop
 
