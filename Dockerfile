@@ -16,6 +16,6 @@ RUN rm -rf /tmp/${TORNAME}
 
 EXPOSE 9150
 RUN echo "Log notice stdout" >> /etc/torrc
-RUN echo "SocksPort 0.0.0.0:9150" >> /etc/torrc
+RUN echo "SocksPort 0.0.0.0:9050" >> /etc/torrc
 
 CMD /usr/local/bin/tor -f /etc/torrc
