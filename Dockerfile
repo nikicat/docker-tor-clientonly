@@ -14,7 +14,7 @@ RUN cd /tmp/${TORNAME} && make
 RUN cd /tmp/${TORNAME} && make install
 RUN rm -rf /tmp/${TORNAME}
 
-EXPOSE 9150
+EXPOSE 9050
 RUN echo "Log notice stdout" >> /etc/torrc
 RUN echo "SocksPort 0.0.0.0:9050" >> /etc/torrc
 
